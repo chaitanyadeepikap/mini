@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Finder</title>
+  <link rel="stylesheet" href="styleshospital.css">
+</head>
+<body>
+  <header>
+    <h1>FirstAidNet</h1>
+    <p>Your Trusted Emergency Care Provider</p>
+  </header>
+
+  <main>
+    <section id="hospital-section">
+      <button id="hospitalFinderBtn">Find Nearby Hospitals</button>
+      <div id="map" style="height: 400px; margin-top: 20px;"></div>
+    
+      <h3>Nearby Hospitals</h3>
+      <ul id="hospital-list"></ul> <!-- List all hospitals here -->
+    </section>    
+  </main>
+
+  <footer>
+    <p>Contact us at info@firstaidnet.com</p>
+  </footer>
+
+  <!-- Include Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsApiKey %>&libraries=places"></script>
+  <script src="scripthospital.js"></script>
+</body>
+</html>
+

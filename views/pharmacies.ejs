@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacies Finder</title>
+  <link rel="stylesheet" href="stylepharmacies.css">
+</head>
+<body>
+  <header>
+    <h1>FirstAidNet</h1>
+    <p>Your Trusted Emergency Care Provider</p>
+  </header>
+
+  <main>
+    <button id="pharmacyFinderBtn">Find Nearby Pharmacies</button>
+    <div id="map"></div>
+    <ul id="pharmacy-list"></ul>
+  </main>
+
+  <footer>
+    <p>Contact us at info@firstaidnet.com</p>
+  </footer>
+
+  <!-- Include Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsApiKey %>&libraries=places"></script>
+  <script src="scriptpharmacies.js"></script>
+</body>
+</html>

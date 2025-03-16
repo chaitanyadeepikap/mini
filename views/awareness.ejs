@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness - FirstAidNet</title>
+    <link rel="stylesheet" href="./awareness.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">FirstAidNet</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="#contact">Contact Us</a>
+            </div>            
+        </div>
+    </header>
+
+    <section class="awareness">
+        <h1>Emergency Awareness</h1>
+        <p>Learn how to handle emergency situations effectively with our simple and practical tips.</p>
+        <div class="tips">
+            <div class="tip">
+                <img src="https://png.pngtree.com/png-clipart/20230814/original/pngtree-health-card-with-boy-having-head-injury-health-head-injury-pupil-vector-picture-image_10633845.png" alt="Head Injury">
+                <h2>Head Injuries</h2>
+                <p>Steps to handle head injury safely.</p>
+                <button class="open-modal" data-title="Head Injuries" data-content="Keep the injured person still and avoid unnecessary movement. Look for signs of concussion, like confusion, dizziness, or memory loss. Apply a cold pack to reduce swelling, but avoid direct pressure on any open wound. Seek medical attention immediately if symptoms worsen.">Learn More</button>
+            </div>
+
+            <div class="tip">
+                <img src="https://media.istockphoto.com/id/613327526/vector/burns.jpg?s=612x612&w=0&k=20&c=njkdb2h2zRkRoREVGrVtqyqGfeNgzRjtHnjgyXKb2DY=" alt="Burns">
+                <h2>Burns</h2>
+                <p>Tips for handling minor and severe burns.</p>
+                <button class="open-modal" data-title="Burns" data-content="For minor burns, cool the area under running water for 10-15 minutes. Avoid using ice directly. Do not pop any blisters that form. For severe burns, call emergency services immediately and keep the burn covered with a clean, non-stick cloth.">Learn More</button>
+            </div>
+
+            <div class="tip">
+                <img src="https://www.shutterstock.com/image-vector/set-sad-character-man-injuries-600nw-1368823949.jpg" alt="Fractures">
+                <h2>Fractures</h2>
+                <p>Steps to handle fractures safely.</p>
+                <button class="open-modal" data-title="Fractures" data-content="Stabilize the injured area with a splint or padding. Avoid moving the injured limb unnecessarily. Elevate the limb slightly if possible to reduce swelling, and seek professional medical help immediately.">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 FirstAidNet. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./awareness.js"></script>
+</body>
+</html>

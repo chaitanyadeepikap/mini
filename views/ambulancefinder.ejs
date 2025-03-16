@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambulance Finder</title>
+  <link rel="stylesheet" href="stylesambulance.css">
+</head>
+<body>
+  <header>
+    <h1>FirstAidNet</h1>
+    <p>Find Ambulance Services Near You</p>
+  </header>
+
+  <main>
+    <button id="ambulanceFinderBtn">Find Nearby Ambulance Services</button>
+    <div id="map"></div>
+    <ul id="ambulance-list"></ul>
+  </main>
+
+  <footer>
+    <p>Contact us at info@firstaidnet.com</p>
+  </footer>
+
+  <!-- Include Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsApiKey %>&libraries=places"></script>
+  <script src="scriptambulance.js"></script>
+</body>
+</html>

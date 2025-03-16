@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistance - FirstAidNet</title>
+    <link rel="stylesheet" href="ai_assistance.css">
+</head>
+<body>
+    <div class="navbar">
+        <div></div> <!-- An empty div to push the Home link to the right -->
+        <a href="/" class="home-link">Home</a>
+    </div>
+    
+    <header>
+        <h1>AI Assistance - FirstAidNet</h1>
+        <p>Ask about symptoms, health advice, or find emergency services.</p>
+    </header>
+
+    <main>
+        <section class="chatbox-section">
+            <h2>AI Symptom Checker & Health Chatbot</h2>
+            <div id="chatbox">
+                <div class="chat-message bot">Hello! How can I assist you today?</div>
+            </div>
+            <input type="text" id="userInput" placeholder="Describe your symptoms or ask a question..." />
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </main>
+
+    <script src="/ai_assistance.js"></script>
+</body>
+</html>

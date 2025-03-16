@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Finder</title>
+    <link rel="stylesheet" href="stylesbloodbank.css">
+</head>
+<body>
+    <header>
+        <h1>FirstAidNet</h1>
+        <p>Find Blood Banks Near You</p>
+    </header>
+
+    <main>
+        <button id="bloodBankFinderBtn">Find Nearby Blood Banks</button>
+        <div id="map"></div>
+        <ul id="bloodbank-list"></ul>
+    </main>
+
+    <footer>
+        <p>Contact us at info@firstaidnet.com</p>
+    </footer>
+
+    <!-- Include Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= googleMapsApiKey %>&libraries=places"></script>
+    <script src="scriptbloodbank.js"></script>
+</body>
+</html>

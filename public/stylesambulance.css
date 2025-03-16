@@ -1,0 +1,101 @@
+/* General Reset and Body Styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url('./bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #002244;
+}
+
+/* Header Styling */
+header {
+  background-color: rgba(0, 95, 153, 0.8); /* Adding transparency for better visibility */
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Main Content Styling */
+main {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Light overlay for readability */
+  display: inline-block;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Button Styling */
+#ambulanceFinderBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #005f99;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#ambulanceFinderBtn:hover {
+  background-color: #0077cc;
+  transform: scale(1.05);
+}
+
+/* Map Styling */
+#map {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light transparent border */
+  background: none; /* Removes any background color */
+}
+
+/* Ambulance List Styling */
+#ambulance-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ambulance-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #99c2e3;
+  background-color: rgba(230, 242, 255, 0.35); /* Light blue with transparency */
+  width: 300px;
+}
+
+/* Ambulance Image */
+.ambulance-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Ambulance Details */
+.ambulance-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #004a80;
+}
+
+.ambulance-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #336699;
+}
+
+/* Footer Styling */
+footer {
+  background-color: rgba(204, 224, 245, 0.8);
+  padding: 1rem;
+  margin-top: 2rem;
+}
