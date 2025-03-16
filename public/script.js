@@ -26,6 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "pharmacies.html";
     });
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuIcon.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+});
+
   
   
   document.getElementById('contactForm').addEventListener('submit', async (e) => {
