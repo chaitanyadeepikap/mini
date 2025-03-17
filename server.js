@@ -34,7 +34,8 @@ app.get('/bloodbanks.html', (req, res) => res.render('bloodbanks', { googleMapsA
 app.get('/hospitalfinder.html', (req, res) => res.render('hospitalfinder', { googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY }));
 app.get('/ambulancefinder.html', (req, res) => res.render('ambulancefinder', { googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY }));
 app.get('/pharmacies.html', (req, res) => res.render('pharmacies', { googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY }));
- 
+app.get('/donate',(req, res) => res.render('donate'));
+
 app.post('/send-feedback', async (req, res) => {
     const { contactInfo, message } = req.body;
 
@@ -80,6 +81,7 @@ app.post('/ai-assistance', async (req, res) => {
         res.status(500).json({ error: 'Failed to get a response from the AI model.' });
     }
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
