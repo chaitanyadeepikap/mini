@@ -1,0 +1,130 @@
+/* General Page Styling */
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background: url("./bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  color: #fff; /* Ensures readability */
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 74, 153, 0.9); /* Deep blue with transparency */
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center;
+}
+
+/* Right-side Links (Home, First Aid Guide, Contact) */
+.nav-right {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+/* Style for Right-side Links */
+.nav-right a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #cce7ff; /* Light blue effect on hover */
+}
+
+/* Main Content */
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Donation & Assistance Sections */
+.donation,
+.assistance {
+  background: rgba(255, 255, 255, 0.95); /* White with slight transparency */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: left;
+  color: #004a80; /* Deep blue text */
+}
+
+/* Section Titles */
+h2 {
+  color: #004a80; /* Deep blue */
+  text-align: center;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #002a4d; /* Darker blue */
+}
+
+input,
+select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #004a80;
+  border-radius: 5px;
+  font-family: "Times New Roman", serif;
+}
+
+#health-condition {
+  padding: 10px;
+  font-size: 10px;
+  border: 1px solid #004a80;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  background-color: #0288d1; /* Light blue */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Times New Roman", serif;
+}
+
+button:hover {
+  background-color: #01579b; /* Darker blue */
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 74, 153, 0.9);
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
