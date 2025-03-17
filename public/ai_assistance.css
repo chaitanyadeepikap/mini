@@ -12,21 +12,21 @@ body {
 /* Navigation Bar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Aligns left & right elements */
+  justify-content: flex-end; /* Aligns items to the right */
   align-items: center;
   background: rgba(0, 74, 153, 0.85); /* Dark blue */
   padding: 15px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Left-side Links (Home, First Aid Guide, Contact) */
-.nav-left {
+/* Right-side Links (Home, First Aid Guide, Contact) */
+.nav-right {
   display: flex;
   gap: 20px; /* Space between links */
 }
 
-/* Style for Left-side Links */
-.nav-left a {
+/* Style for Right-side Links */
+.nav-right a {
   color: white;
   font-size: 1.1rem;
   text-decoration: none;
@@ -34,14 +34,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-left a:hover {
+.nav-right a:hover {
   color: #cce7ff; /* Light blue effect on hover */
-}
-
-/* Right-side Links (if needed) */
-.nav-right {
-  display: flex;
-  gap: 20px; /* Space between right-side links */
 }
 
 /* Header */
