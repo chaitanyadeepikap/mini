@@ -4,6 +4,7 @@ import connectDB from './config/db.js';
 import Feedback from './models/Feedback.js';
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import Donation from './routes/Donation.js';
 
 dotenv.config();
 
@@ -35,6 +36,8 @@ app.get('/hospitalfinder.html', (req, res) => res.render('hospitalfinder', { goo
 app.get('/ambulancefinder.html', (req, res) => res.render('ambulancefinder', { googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY }));
 app.get('/pharmacies.html', (req, res) => res.render('pharmacies', { googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY }));
 app.get('/donate',(req, res) => res.render('donate'));
+
+app.use("/api",Donation);
 
 app.post('/send-feedback', async (req, res) => {
     const { contactInfo, message } = req.body;

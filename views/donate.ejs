@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blood Donation & Request - FirstAidNet</title>
     <link rel="stylesheet" href="donate.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-        <header>
         <div class="navbar">
-                <div class="nav-right">
-                    <a href="/">Home</a>
-                    <a href="mailto : chaitanyadeepikap@mail.com">Contact Us</a>
-                </div>            
+            <div class="nav-right">
+                <a href="/">Home</a>
+                <a href="mailto:chaitanyadeepikap@mail.com">Contact Us</a>
             </div>
-        </header>
-      <h1>FirstAidNet - Blood Donation & Request</h1>
+        </div>
+        <h1>FirstAidNet - Blood Donation & Request</h1>
     </header>
 
     <main>
-      <!-- Blood Donation Section -->
-      <section class="donation">
-        <h2>Donate Blood</h2>
-        <form id="donationForm">
-          <label for="donorName">Your Name:</label>
-          <input type="text" id="donorName" required />
+        <section class="donation">
+            <h2>Donate Blood</h2>
+            <form id="donationForm">
+                <label for="donorName">Your Name:</label>
+                <input type="text" id="donorName" required />
 
-          <label for="donorContact">Contact Number:</label>
-          <input type="text" id="donorContact" required />
+                <label for="donorContact">Contact Number:</label>
+                <input type="text" id="donorContact" required />
 
-          <label for="bloodGroup">Blood Group:</label>
-          <select id="bloodGroup" required>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
-          </select>
+                <label for="bloodGroup">Blood Group:</label>
+                <select id="bloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
 
-          <label for="health-condition">Health Condition:</label>
+                <label for="health-condition">Health Condition:</label>
                 <textarea id="health-condition" name="health-condition" placeholder="Mention any existing health issues..." required></textarea>
 
-          <button type="submit">Register as a Donor</button>
-        </form>
-      </section>
+                <button type="submit">Register as a Donor</button>
+            </form>
+        </section>
 
-      <!-- Blood Request Section -->
-      <section class="assistance">
-        <h2>Request Blood</h2>
-        <form id="assistanceForm">
-          <label for="seekerName">Your Name:</label>
-          <input type="text" id="seekerName" required />
+        <section class="assistance">
+            <h2>Request Blood</h2>
+            <form id="assistanceForm">
+                <label for="seekerName">Your Name:</label>
+                <input type="text" id="seekerName" required />
 
-          <label for="seekerContact">Contact Number:</label>
-          <input type="text" id="seekerContact" required />
+                <label for="seekerContact">Contact Number:</label>
+                <input type="text" id="seekerContact" required />
 
-          <label for="neededBloodGroup">Required Blood Group:</label>
-          <select id="neededBloodGroup" required>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
-          </select>
+                <label for="neededBloodGroup">Required Blood Group:</label>
+                <select id="neededBloodGroup" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
 
-          <label for="hospital">Hospital Name:</label>
-          <input type="text" id="hospital" required />
+                <label for="hospital">Hospital Name:</label>
+                <input type="text" id="hospital" required />
 
-          <button type="submit">Request Blood</button>
-        </form>
-      </section>
+                <button type="submit">Request Blood</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-      <p>Contact us at info@firstaidnet.com</p>
+        <p>Contact us at info@firstaidnet.com</p>
     </footer>
 
     <script src="donate.js"></script>
-  </body>
+</body>
 </html>
