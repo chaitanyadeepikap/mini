@@ -14,30 +14,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 74, 153, 0.9); /* Dark blue with transparency */
+  background: rgba(0, 74, 153, 0.85); /* Dark blue */
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 20px; /* Space between nav links */
 }
 
+/* Home Link - Clean Look */
+.home-link {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Other Navigation Links */
 .navbar .nav-link {
   color: white;
-  background-color: black;
   padding: 10px 15px;
-  margin: 0 10px;
   text-decoration: none;
   border-radius: 8px;
   font-size: 1rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.navbar .nav-link:hover {
-  background-color: #444;
-  transform: scale(1.05);
-}
-
-/* Header Styling */
+/* Header */
 header {
-  background-color: rgba(0, 74, 153, 0.85); /* Dark blue */
+  background-color: rgba(0, 74, 153, 0.85); /* Dark blue with transparency */
   color: white;
   padding: 1.5rem;
   font-size: 1.8rem;
@@ -142,17 +145,6 @@ button:active {
 @media (max-width: 768px) {
   .quick-links,
   .chatbox-section {
-    width: 95%;
-  }
-  
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .navbar .nav-link {
-    margin: 5px 0;
-    width: 80%;
-    text-align: center;
+      width: 95%;
   }
 }
