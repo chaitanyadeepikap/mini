@@ -5,13 +5,39 @@ body {
   padding: 0;
   background: url('./bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color : white;
   text-align: center;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 74, 153, 0.9); /* Dark blue with transparency */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-link {
+  color: white;
+  background-color: black;
+  padding: 10px 15px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: #444;
+  transform: scale(1.05);
 }
 
 /* Header Styling */
 header {
-  background-color: rgba(0, 74, 153, 0.85); /* Dark blue with transparency */
+  background-color: rgba(0, 74, 153, 0.85); /* Dark blue */
   color: white;
   padding: 1.5rem;
   font-size: 1.8rem;
@@ -112,32 +138,21 @@ button:active {
   transform: scale(0.95);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: rgba(0, 74, 153, 0.85);
-  box-shadow: 0 4px 8px rgba(131, 102, 102, 0.1);
-}
-
-.home-link {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.home-link:hover {
-  background-color: #333;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .quick-links,
   .chatbox-section {
-      width: 95%;
+    width: 95%;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar .nav-link {
+    margin: 5px 0;
+    width: 80%;
+    text-align: center;
   }
 }
