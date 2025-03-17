@@ -12,30 +12,36 @@ body {
 /* Navigation Bar */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Aligns left & right elements */
   align-items: center;
   background: rgba(0, 74, 153, 0.85); /* Dark blue */
-  padding: 15px;
+  padding: 15px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  gap: 20px; /* Space between nav links */
 }
 
-/* Home Link - Clean Look */
-.home-link {
+/* Left-side Links (Home, First Aid Guide, Contact) */
+.nav-left {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+/* Style for Left-side Links */
+.nav-left a {
   color: white;
   font-size: 1.1rem;
   text-decoration: none;
-  padding: 10px;
+  font-family: 'Times New Roman', serif;
+  transition: color 0.3s ease;
 }
 
-/* Other Navigation Links */
-.navbar .nav-link {
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+.nav-left a:hover {
+  color: #cce7ff; /* Light blue effect on hover */
+}
+
+/* Right-side Links (if needed) */
+.nav-right {
+  display: flex;
+  gap: 20px; /* Space between right-side links */
 }
 
 /* Header */
@@ -143,6 +149,17 @@ button:active {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
   .quick-links,
   .chatbox-section {
       width: 95%;
