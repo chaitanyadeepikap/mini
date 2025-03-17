@@ -58,22 +58,15 @@ app.post('/ai-assistance', async (req, res) => {
         return res.status(400).json({ error: 'Symptoms are required.' });
     }
 
-    const prompt = `Generate a detailed health assessment based on the provided symptoms: ${symptoms}.
+    const prompt = `Analyze the given symptoms: ${symptoms}.  
 
-The response should include:
-1. A list of possible medical conditions with details:
-    - Condition Name
-    - Description
-    - Common Symptoms
-    - Possible Causes
-    - Severity Level (Mild, Moderate, Severe)
-    - Recommended Diagnostic Tests
-    - Suggested Treatments or Remedies
-    - Precautions to Take
-2. General Health Advice:
-    - Lifestyle Changes
-    - Dietary Recommendations
-    - Warning Signs to Seek Immediate Medical Attention`;
+    Provide a concise health assessment including:  
+    1. Possible medical conditions (name, description, symptoms, causes, severity).  
+    2. Recommended diagnostic tests.  
+    3. Suggested treatments or remedies.  
+    4. Precautions to take.  
+    5. Lifestyle changes and dietary advice.  
+    6. Warning signs that require immediate medical attention.`;  
 
     try {
         const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
